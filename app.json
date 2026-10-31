@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Agenda Escolar CIM",
+    "slug": "agenda-escolar-cim",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "cimagenda",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.seuprojeto.agendaescolarcim"
+    },
+    "android": {
+      "package": "com.seuprojeto.agendaescolarcim",
+      "adaptiveIcon": {
+        "backgroundColor": "#F4F6FB"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-document-picker",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "16.0"
+          }
+        }
+      ],
+      [
+        "expo-mlkit-ocr",
+        {
+          "iosEngine": "auto"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
